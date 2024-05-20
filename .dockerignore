@@ -1,0 +1,16 @@
+# Ignore all files and directories starting with a dot
+.*
+
+# Ignore Go binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore Go test cache
+/.cache
+
+# Ignore Git files and directories
+.git
+.gitignore
