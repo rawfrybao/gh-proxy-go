@@ -1,7 +1,7 @@
 # gh-proxy-go
 A GitHub reverse proxy written in Go
 
-## Building
+## Building From Source
 
 Initializing the module:
 
@@ -13,19 +13,19 @@ go mod init gh-proxy-go
 go mod tidy
 ```
 
-## Building
+### Building
 
 ```shell
 go build
 ```
 
-## Running
+### Running
 
 ```she
 ./gh-proxy-go
 ```
 
-## Setting up a system service
+### Setting up a system service
 
 Copy the executable to a dedicated location
 
@@ -77,6 +77,20 @@ Start the service
 
 ```shell
 systemctl start gh-proxy-go
+```
+
+## Using Docker
+
+Building the image
+
+```shell
+docker build . -t gh-proxy-go:1.0
+```
+
+Creating the container
+
+```shell
+docker run -p 8001:8001 gh-proxy-go:1.0
 ```
 
 ## Setting up Nginx
